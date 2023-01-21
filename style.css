@@ -52,11 +52,15 @@ section {
 
 .carousel-item p {
     font-weight: 300;
+    width: 50%;
+    margin: auto;
     letter-spacing: 1px;
 }
 
 .carousel-item h2 {
     font-weight: 500;
+    width: 70%;
+    margin: auto;
 }
 
 .carousel-item a {
@@ -88,6 +92,7 @@ section {
 .package-item {
     border-radius: 26px;
     transition: 0.4s ease-in-out;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.13);
 }
 
 .package-item p:first-child {
@@ -125,15 +130,12 @@ section {
     background-color: #3F87F5;
     color: white;
     border-radius: 26px;
+    margin-top: -50px;
+    position: relative;
 }
 
 .hot li {
     color: white;
-}
-
-.hot {
-    margin-top: -50px;
-    position: relative;
 }
 
 .hot span {
@@ -197,4 +199,46 @@ section {
     color: #383838;
     font-weight: 500;
     font-size: 18px;
+}
+
+
+@media all and (max-width:1200px) {
+    .carousel-item h2 {
+        font-weight: 500;
+        width: 90%;
+        margin: auto;
+    }
+
+    .carousel-item p {
+        width: 75%;
+        margin: auto;
+    }
+
+    .hot {
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    section {
+        padding: 30px 0;
+    }
+
+    .carousel-item h2 {
+        font-weight: 500;
+        width: 100%;
+    }
+
+    .carousel-item p {
+        width: 100%;
+    }
+
+    .capture_moment {
+        padding-top: 50px;
+    }
+
+    .not-selected:hover {
+        margin-top: 0;
+    }
 }
