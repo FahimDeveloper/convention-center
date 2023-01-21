@@ -69,6 +69,7 @@ section {
 
 .capture_moment {
     padding-top: 100px;
+    position: relative;
 }
 
 .capture_moment h2 {
@@ -87,6 +88,13 @@ section {
     border: none;
     padding: 10px 25px;
     font-weight: 700;
+}
+
+.toast {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    border-left: 10px solid #3F87F5;
 }
 
 .package-item {
@@ -237,6 +245,14 @@ section {
     .capture_moment {
         padding-top: 50px;
     }
+
+    .toast {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        border-left: 10px solid #3F87F5;
+    }
+
 
     .not-selected:hover {
         margin-top: 0;
